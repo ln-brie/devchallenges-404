@@ -43,13 +43,24 @@ footer span {
 } */
 
 body {
-    margin: auto 1.5em ;
+    margin: auto 1.5em;
 }
 
 header {
     font-family: 'Inconsolata', monospace;
     font-size: 24px;
     color: #333333;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4em ;
+}
+
+img {
+    width: 90%;
+    margin: 3em auto;
 }
 
 #text {
@@ -67,23 +78,31 @@ header {
     margin-bottom: 4em;
 }
 
-#wrapper {
-    display: flex;
-    flex-direction: column;
-}
-
-img {
-    width: 100%;
+button {
+    background-color: #333333;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1.5em;
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
 }
 
 footer {
-    margin: 3em auto;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     text-align: center;
     color: #BDBDBD;
-    position: ;
+    position: absolute;
+    width: fit-content;
+    margin: auto;
+    left: 0;
+    right: 0;
 }
+
+footer p {
+    padding: 1em auto;
+}
+
 
 footer span {
     font-weight: bold;
